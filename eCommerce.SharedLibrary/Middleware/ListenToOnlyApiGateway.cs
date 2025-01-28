@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.SharedLibrary.Middleware
 {
-    public class ListenToOnlyApiGateway(RequestDelegate contexxt)
+    public class ListenToOnlyApiGateway(RequestDelegate next)
     {
         public async Task InvokeAsync(HttpContext context)
         {
