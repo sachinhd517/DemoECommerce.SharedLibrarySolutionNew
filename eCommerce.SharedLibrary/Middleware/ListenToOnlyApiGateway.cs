@@ -22,7 +22,7 @@ namespace eCommerce.SharedLibrary.Middleware
             }
             else
             {
-                await contexxt(context);
+                await next(context);
             }
 
         }
