@@ -41,7 +41,7 @@ namespace eCommerce.SharedLibrary.DependancyInjection
         public static IApplicationBuilder UseSharedPolicies(this IApplicationBuilder app)
         {
             // Use golobal Exception
-            app.UseMiddleware<GobalException>();
+            app.UseMiddleware<GlobalExceptions>();
 
             // Register middleware to block all outsiders API calls
             app.UseMiddleware<ListenToOnlyApiGateway>();
