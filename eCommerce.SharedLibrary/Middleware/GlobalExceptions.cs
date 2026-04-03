@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using System.Text.Json;
 using Serilog;
+using System.Net;
 
 namespace eCommerce.SharedLibrary.Middleware
 {
@@ -14,6 +15,7 @@ namespace eCommerce.SharedLibrary.Middleware
 
         public async Task InvokeAsync(HttpContext context)
         {
+           
             try
             {
                 await _next(context);
