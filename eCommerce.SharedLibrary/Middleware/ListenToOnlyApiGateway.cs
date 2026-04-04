@@ -18,7 +18,8 @@ namespace eCommerce.SharedLibrary.Middleware
             if(signedHeader.FirstOrDefault() == null)
             {
                 context.Response.StatusCode = StatusCodes.Status503ServiceUnavailable;
-                await context.Response.WriteAsync("Service Unavailable");
+                await context.Response.WriteAsync("Sorry, Service is  Unavailable");
+                return;
             }
             else
             {
