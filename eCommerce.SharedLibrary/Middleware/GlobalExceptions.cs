@@ -66,7 +66,7 @@ namespace eCommerce.SharedLibrary.Middleware
                 if (ex is TaskCanceledException || ex is TaskCanceledException)
                 {
                     title = "Out of Time";
-                    message = "Request Timeout...... ⌛⌛⌛⌛⌛😥😥😥😥😥 😥😥😥😥😥 try again 😥😥😥😥😥";
+                    message = "Request Timeout...... try againS";
                     statusCode = (int)StatusCodes.Status408RequestTimeout;
                    
                 }
