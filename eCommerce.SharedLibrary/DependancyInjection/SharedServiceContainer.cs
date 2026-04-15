@@ -14,7 +14,7 @@ namespace eCommerce.SharedLibrary.DependancyInjection
 {
     public static class SharedServiceContainer
     {
-        public static IServiceCollection AddSharedService<TContext>
+        public static IServiceCollection AddSharedServices<TContext>
             (this IServiceCollection service, IConfiguration config, string fileName) where TContext : DbContext
         {
             service.AddDbContext<TContext>(options =>
